@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoebe Zhennan AI Design System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #0c0a09;
+      color: #fafaf9;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    #loader {
+      position: fixed;
+      inset: 0;
+      background: #0c0a09;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #292524;
+      border-top-color: #fbbf24;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #fbbf24; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+    <p style="margin-top: 1rem; color: #78716c; font-family: monospace; font-size: 12px; letter-spacing: 2px;">SYSTEM INITIALIZING...</p>
+  </div>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Phoebe Zhennan AI Design System",
+  "description": "A sophisticated furniture design platform utilizing dual-stream semantic perception for golden silk nanmu (Phoebe zhennan) wood grain optimization.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}

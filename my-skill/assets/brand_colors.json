@@ -1,0 +1,14 @@
+{
+  "theme": "dark",
+  "colors": {
+    "primary": "#fbbf24",
+    "primaryDark": "#b45309",
+    "background": "#0c0a09",
+    "surface": "#1c1917",
+    "accent": "#10b981"
+  },
+  "typography": {
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "tracking": "tight"
+  }
+}
